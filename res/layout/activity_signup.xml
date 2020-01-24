@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signup"
+    android:background="@drawable/background">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="78dp"
+        android:layout_marginLeft="78dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginRight="78dp"
+        android:layout_marginBottom="37dp"
+        android:text="Enter your details"
+        android:textColor="@color/White"
+        app:layout_constraintBottom_toTopOf="@+id/emailID"
+        app:layout_constraintEnd_toEndOf="@+id/pwd"
+        app:layout_constraintStart_toStartOf="@+id/emailID" />
+
+    <EditText
+        android:id="@+id/emailID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="46dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/pwd"
+        app:layout_constraintEnd_toEndOf="@+id/pwd"
+        android:hint="Enter email ID"
+        android:textColorHint="@color/White"
+        android:textColor="@color/White"/>
+
+    <EditText
+        android:id="@+id/pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginBottom="42dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/phoneNO"
+        app:layout_constraintStart_toStartOf="@+id/phoneNO"
+        android:hint="Enter password"
+        android:textColorHint="@color/White"
+        android:textColor="@color/White"/>
+
+    <EditText
+        android:id="@+id/phoneNO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Phone number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColorHint="@color/White"
+        android:textColor="@color/White"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter your Name"
+        app:layout_constraintStart_toStartOf="@+id/phoneNO"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNO"
+        android:textColorHint="@color/White"
+        android:textColor="@color/White"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:text="Signup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        android:onClick="RedirectToHome"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
